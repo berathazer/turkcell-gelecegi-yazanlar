@@ -1,0 +1,16 @@
+spring.application.name=rentacar:
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres # Veritabanı URL'si ve adı
+    username: postgres # Veritabanı kullanıcı adı
+    password: 12345 # Veritabanı şifresi
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Veritabanı şemasını otomatik olarak yönetmek için (none, update, create, create-drop)
+    show-sql: true # SQL sorgularını konsolda gösterir
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect # PostgreSQL için lehçe/dialect
+        format_sql: true
