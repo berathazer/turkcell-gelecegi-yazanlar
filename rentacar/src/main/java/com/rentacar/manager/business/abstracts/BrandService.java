@@ -1,8 +1,18 @@
 package com.rentacar.manager.business.abstracts;
 
-import com.rentacar.manager.business.Dtos.Requests.CreateBrandRequest;
-import com.rentacar.manager.business.Dtos.Responses.CreateBrandResponse;
+import com.rentacar.manager.entities.Brand;
+
+import java.util.List;
 
 public interface BrandService {
-    CreateBrandResponse add(CreateBrandRequest createBrandRequest);
+    Brand add(Brand brand);
+
+    Brand getById(int id);
+
+    List<Brand> getAll();
+
+    void delete(int id);
+
+    void update(int id,Brand brand);
+
 }

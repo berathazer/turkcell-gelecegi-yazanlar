@@ -14,9 +14,4 @@ public class RentacarApplication {
 
 	}
 
-	@Bean
-	public ModelMapper getModelMapper(){
-		return new ModelMapper();
-	}
-
 }
